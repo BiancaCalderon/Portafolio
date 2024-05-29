@@ -1,0 +1,179 @@
+:root {
+  --font-family: 'Montserrat', 'Asap', 'Padauk', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-weight: 400;
+  --line-height: 1.5;
+
+  --color-primary: #535bf2;
+  --color-secondary: #4248b9;
+  --color-tertiary: #5727a0;
+  --color-quaternary: #63408b;
+  --color-quinary: #b2a2cc;
+
+  --background-color: #000;
+  --link-color: #646cff;
+  --link-hover-color: #535bf2;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--background-color);
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--link-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.section p {
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+#header {
+  position: relative;
+}
+
+
+#header .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+#header #name {
+  text-align: center;
+  color: var(--color-primary);
+  margin-top: 50px;
+}
+
+#header hr {
+  background-color: var(--color-primary);
+  height: 5px;
+  border: none;
+  margin: 20px auto;
+}
+
+#aboutme .container-fluid {
+  text-align: center;
+}
+
+#about-me p {
+  font-size: 1.5em; /* Ajusta este valor según tus necesidades */
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+
+
+#portfolio .container-fluid {
+  text-align: center;
+}
+
+#portfolio .row {
+  justify-content: center;
+}
+
+#portfolio .col-xs-12 {
+  text-align: center;
+}
+
+#skillset .container-fluid {
+  text-align: center;
+}
+
+#skillset .row {
+  justify-content: center;
+}
+
+#skillset .col-xs-12 {
+  text-align: center;
+}
+
+#experience .container-fluid {
+  text-align: center;
+}
+
+#experience .row {
+  justify-content: center;
+}
+
+#experience .col-xs-12 {
+  text-align: center;
+}
+
+#contact .container-fluid {
+  text-align: center;
+}
+
+#contact .row {
+  justify-content: center;
+}
+
+#contact .col-xs-12 {
+  text-align: center;
+}
+
+#footer .container-fluid {
+  text-align: center;
+}

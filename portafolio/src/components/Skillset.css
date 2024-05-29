@@ -1,0 +1,17 @@
+#skillset {
+    padding: 20px;
+    background-color: #242424;
+}
+
+#skillset ul {
+    list-style-type: none;
+}
+
+#skillset li {
+    margin: 5px 0;
+}
+
+.svg-skill {
+    width: 100px; 
+    height: 100px; 
+  }

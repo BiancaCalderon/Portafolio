@@ -1,0 +1,20 @@
+[
+    {
+        "title": "A personal photo blog",
+        "description": "This proyect is a personal photo blog developed with Vite",
+        "image": "/assets/img/photo_blog.jpg",
+        "link": "https://vite-photo-blog.vercel.app/"
+    },
+    {
+        "title": "Evolve",
+        "description": "Una aplicación kotlin de ejercicios incluyendo videos y calcula tu índice de masa corporal desarollada con mi compañero @DanielDubon",
+        "image": "/assets/img/evolve.png",
+        "link": "https://github.com/DanielDubon/Evolve.git"
+    },
+    {
+        "title": "Fichas Médicas",
+        "description": "Actualmente estoy trabajando en conjunto con 4 compañeros más en la creación de fichas médicas para la Universidad del Valle de Guatemala",
+        "image": "/assets/img/sanitas.jpg",
+        "link": "https://sanitasuvg.github.io/Sanitas/"
+    }
+]

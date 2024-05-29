@@ -1,0 +1,46 @@
+/* CSS for Navbar component */
+#navbar .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .navbar-brand img {
+    width: 270px; 
+    height: 250px;
+}
+
+#navbar .navbar-brand .brand-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
