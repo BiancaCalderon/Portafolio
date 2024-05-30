@@ -13,18 +13,16 @@ function Portfolio() {
                     </div>
                 </div>
                 <article>
-                    <div className="container-fluid">
-                        <div className="row">
-                            {portfolioData.map((project, index) => (
-                                <div key={index} className="col-sm-4 col-xs-12 image-container">
-                                    <a className="btn-portfolio" href={project.link} target="_blank" rel="noopener noreferrer">
-                                        <img src={project.image} className="img-responsive" alt={project.title} />
-                                        <h4>{project.title}</h4>
-                                        <p>{project.description}</p>
-                                    </a>
-                                </div>
-                            ))}
-                        </div>
+                    <div className="portfolio-grid">
+                        {portfolioData.map((project, index) => (
+                            <div key={index} className="portfolio-item">
+                                <a className="btn-portfolio" href={project.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={project.image} className="img-responsive" alt={project.title} />
+                                    <h3>{project.title}</h3>
+                                    <p>{project.description}</p>
+                                </a>
+                            </div>
+                        ))}
                     </div>
                 </article>
             </div>

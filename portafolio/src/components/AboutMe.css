@@ -1,13 +1,39 @@
 #about-me {
-    background-color: #242424; 
-    padding: 50px 0;
-  }
-  
-  #about-me h2 {
-    color: #535bf2; 
-  }
-  
-  .section-hr {
-    border-top: 2px solid #313ad6; 
-  }
-  
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#about-me .container-fluid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about-me h2 {
+  text-align: center;
+  color: #535bf2;
+}
+
+.section-hr {
+  width: 60px;
+  height: 4px;
+  background-color: #535bf2;
+  border: none;
+  margin: 20px auto;
+}
+
+.about-me-content {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-me-content p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.about-me-content strong {
+  color: #333;
+}
