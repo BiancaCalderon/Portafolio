@@ -1,0 +1,149 @@
+.App.dark {
+    --primary-color: #64ffda;
+    --secondary-color: #ccd6f6;
+    --background-color: #0a192f;
+    --card-background-color: #112240;
+    --cursor-image: url('/assets/img/kiwi.png') 16 16, url('/assets/img/gato.png') 16 16, auto;
+}
+
+.App.light {
+    --primary-color: #6366f1;
+    --secondary-color: #1e293b;
+    --background-color: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f4ff 100%);
+    --card-background-color: rgba(255, 255, 255, 0.8);
+    --accent-color: #f59e0b;
+    --text-accent: #7c3aed;
+    --cursor-image: url('/assets/img/tom.png') 16 16, url('/assets/img/gato.png') 16 16, auto;
+}
+
+body {
+    font-family: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    background: var(--background-color);
+    color: var(--secondary-color);
+    transition: background 0.5s, color 0.5s;
+    min-height: 100vh;
+    cursor: var(--cursor-image, auto);
+}
+
+.App * {
+    cursor: var(--cursor-image, auto) !important;
+}
+
+.App a,
+.App button,
+.App [role="button"],
+.App .contact-icons a {
+    cursor: var(--cursor-image, pointer) !important;
+}
+
+/* Forzar el cursor en todos los elementos */
+* {
+    cursor: var(--cursor-image, auto) !important;
+}
+
+a, button, [role="button"], .contact-icons a {
+    cursor: var(--cursor-image, pointer) !important;
+}
+
+/* Cursor de prueba para verificar que funciona */
+body {
+    cursor: url('/assets/img/gato.png') 16 16, auto !important;
+}
+
+/* Cursor específico para enlaces */
+a {
+    cursor: url('/assets/img/gato.png') 16 16, pointer !important;
+}
+
+.section {
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    opacity: 0.3;
+}
+
+.section-title {
+    color: var(--primary-color);
+}
+
+.section-hr {
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    height: 3px;
+    border: none;
+    border-radius: 2px;
+    margin: 20px auto 40px auto;
+    width: 100px;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+    
+    #experience {
+        margin: 10px;
+        padding: 30px 15px;
+    }
+    
+    .timeline {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    #experience .timeline-content h4 {
+        font-size: 1.5em !important;
+    }
+    
+    #experience .timeline-content p {
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 30px 0;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+    }
+    
+    #experience {
+        margin: 5px;
+        padding: 20px 10px;
+    }
+    
+    .timeline {
+        padding: 12px;
+        margin: 12px 0;
+    }
+    
+    #experience .timeline-content h4 {
+        font-size: 1.3em !important;
+    }
+    
+    #experience .timeline-content p {
+        font-size: 0.9em !important;
+    }
+}

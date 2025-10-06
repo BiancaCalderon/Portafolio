@@ -13,7 +13,6 @@ function Header() {
                         <h1 id="name">
                             <span>Bianca Calderón</span>
                         </h1>
-
                         <hr />
                         <p><span className="lead">Software Engineer</span></p>
                     </div>

@@ -1,0 +1,22 @@
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section-hr {
+    width: 80px;
+    height: 5px;
+    border: none;
+    margin: 0 auto 40px auto;
+}
+
+.section-description {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    text-align: center;
+}

@@ -1,6 +1,62 @@
 #experience {
+    padding: 40px 20px;
+    background: var(--card-background-color);
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+#experience .section-description {
+    font-size: 1.2em;
+}
+
+.timeline {
+    position: relative;
     padding: 20px;
-    background-color: #242424;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.timeline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+#experience .timeline-content h4 {
+    font-size: 1.8em !important;
+    margin-bottom: 15px;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#experience .timeline-content p {
+    font-size: 1.1em !important;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--secondary-color) !important;
+    transition: color 0.3s ease;
+}
+
+#experience .timeline-content p:first-of-type {
+    font-weight: 500;
+    color: var(--text-accent, var(--primary-color)) !important;
+}
+
+#experience .timeline-content p:last-of-type {
+    font-style: italic;
+    opacity: 0.9;
 }
 
 .job {

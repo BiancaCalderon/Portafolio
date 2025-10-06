@@ -1,32 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import portfolioData from '../data/portfolioData.json';
+import Section from './Section';
 import './Portfolio.css';
 
 function Portfolio() {
     return (
-        <section id="portfolio" className="odd section">
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-xs-12">
-                        <h2>Portfolio</h2>
-                        <hr className="section-hr" />
-                    </div>
+        <Section id="portfolio" title="Portfolio">
+            <article>
+                <div className="portfolio-grid">
+                    {portfolioData.map((project, index) => (
+                        <PortfolioItem key={index} project={project} />
+                    ))}
                 </div>
-                <article>
-                    <div className="portfolio-grid">
-                        {portfolioData.map((project, index) => (
-                            <div key={index} className="portfolio-item">
-                                <a className="btn-portfolio" href={project.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={project.image} className="img-responsive" alt={project.title} />
-                                    <h3>{project.title}</h3>
-                                    <p>{project.description}</p>
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                </article>
-            </div>
-        </section>
+            </article>
+        </Section>
+    );
+}
+
+function PortfolioItem({ project }) {
+    const [image, setImage] = useState(project.image);
+
+    const handleMouseEnter = () => {
+        if (project.image2) {
+            setImage(project.image2);
+        }
+    };
+
+    const handleMouseLeave = () => {
+        setImage(project.image);
+    };
+
+    return (
+        <div className="portfolio-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <a className="btn-portfolio" href={project.link} target="_blank" rel="noopener noreferrer">
+                <img src={image} className="img-responsive" alt={project.title} />
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+            </a>
+        </div>
     );
 }
 

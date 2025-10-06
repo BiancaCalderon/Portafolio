@@ -1,7 +1,7 @@
 [
     {
         "title": "A personal photo blog",
-        "description": "This proyect is a personal photo blog developed with Vite",
+        "description": "Este es un blog personal con fotos de mi vida utilizando Vite+React que estaba alojado en el servidor de clase",
         "image": "/assets/img/photo_blog.jpg",
         "link": "https://vite-photo-blog.vercel.app/"
     },
@@ -13,8 +13,9 @@
     },
     {
         "title": "Fichas Médicas",
-        "description": "Actualmente estoy trabajando en conjunto con 4 compañeros más en la creación de fichas médicas para la Universidad del Valle de Guatemala",
-        "image": "/assets/img/sanitas.jpg",
+        "description": "Actualmente estoy trabajando en conjunto con 5 compañeros más en la creación de fichas médicas para la Universidad del Valle de Guatemala",
+        "image": "assets/img/sanitas.png",
+        "image2": "assets/img/sanitas_team.jpg",
         "link": "https://sanitasuvg.github.io/Sanitas/"
     }
 ]

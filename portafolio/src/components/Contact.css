@@ -1,24 +1,15 @@
-#contact {
-    padding: 40px 0;
-  }
-  
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contact-links a {
+.contact-icons {
+    font-size: 4rem !important;
+    text-align: center;
+}
+
+.contact-icons a {
+    color: var(--secondary-color);
     margin: 0 10px;
-    color: #333; 
-    font-size: 24px; 
-    transition: color 0.3s ease;
-  }
-  
-  .contact-links a:hover {
-    color: #007bff; 
-  }
-  
-  .contact-icons {
-    font-size: 64px; 
-  }
+    transition: color 0.3s;
+    cursor: var(--cursor-image, pointer);
+}
+
+.contact-icons a:hover {
+    color: var(--primary-color);
+}

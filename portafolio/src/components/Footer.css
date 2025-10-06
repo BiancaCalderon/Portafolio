@@ -1,11 +1,7 @@
 #footer {
-    padding: 0px;
-    background-color: #333;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
     text-align: center;
-}
-
-#footer-content {
-    display: flex;
-    justify-content: center;
+    border-top: 1px solid var(--primary-color);
 }
